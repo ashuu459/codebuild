@@ -10,6 +10,7 @@ phases:
   build:
     commands:
       - echo Build started on `date`
+      - aws ec2 run-instances --region us-west-1 --image-id ami-00569e54da628d17c
   post_build:
     commands:
       - echo Build completed on `date`
